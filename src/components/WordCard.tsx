@@ -8,7 +8,7 @@ interface WordCardProps {
 
 const WordCard: React.FC<WordCardProps> = ({ word, definition, example }) => {
   return (
-    <div className="bg-white rounded-xl shadow-lg hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300 p-8 mb-8 w-full max-w-2xl lg:max-w-3xl flex flex-col">
+    <div className="h-full bg-white rounded-xl shadow-lg hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300 p-8 w-full max-w-2xl lg:max-w-3xl flex flex-col">
       <div className="flex justify-between items-start mb-4">
         <h2 className="text-4xl font-bold text-red-900 capitalize">{word}</h2>
         <span className="text-gray-400 hover:text-red-700 text-2xl cursor-pointer transition-colors duration-200">
@@ -17,8 +17,8 @@ const WordCard: React.FC<WordCardProps> = ({ word, definition, example }) => {
           </svg>
         </span>
       </div>
-      <p className="text-gray-800 text-lg mb-4">{definition}</p>
-      <blockquote className="border-l-4 border-orange-300 italic text-gray-600 pl-4 my-4">
+      <p className="text-gray-800 text-lg mb-4 min-h-24">{definition}</p>
+      <blockquote className="border-l-4 border-orange-300 italic text-gray-600 pl-4 mt-auto">
         {example}
       </blockquote>
     </div>
