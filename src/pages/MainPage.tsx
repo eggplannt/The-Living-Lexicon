@@ -1,24 +1,35 @@
+import logo from "../assets/CalgaryHacks 2026 Logo.png";
+
 export default function MainPage() {
   return (
     <div className="flex flex-col h-screen items-center bg-background px-30">
-      <div className="flex w-full h-full bg-primary p-20 rounded-lg">
+      <div className="flex w-full h-full bg-primary p-15 rounded-lg">
         <div className="flex flex-col justify-center h-full w-1/2">
-          <div className="text-onbackground text-9xl font-bold">
+          <div className="text-onbackground text-8xl font-bold">
             See Through Time
           </div>
           <div className="h-15" />
-          <div className="flex h-16 w-full overflow-clip rounded-md bg-white items-center pl-5 ">
-            <div className="text-gray-600 text-2xl">Search for a word</div>
+          <div className="flex h-16 w-full overflow-clip rounded-md bg-white items-center pl-5">
+            <div className="text-gray-600 text-2xl">Search For A Word</div>
           </div>
           <div className="h-6" />
           <div className="flex h-16 w-72 bg-secondary overflow-clip rounded-md items-center justify-center">
             <div className="text-onbackground text-lg">
-              Enter new word definition
+              Enter New Word Definition
             </div>
           </div>
         </div>
+        <div className="w-50"/>
+        <div className="flex items-center w-full">
+          <img
+            src={logo}
+            alt="The Living Lexicon logo"
+            className="max-h-[1200px] w-auto object-contain"
+          />
+        </div>
       </div>
-      <div className="flex w-full h-24 items-center"></div>
+      <div className="flex w-full h-24 items-center" />
     </div>
   );
 }
+
