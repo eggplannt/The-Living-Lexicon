@@ -35,7 +35,7 @@ export const slangWords: SlangWord[] = [
     shortDefinition:
       "A viral joke, image, or format remixed so hard that the internet adopts it as a shared language.",
     shortExample:
-      "That distracted boyfriend meme is ancient, but it still hits when someone edits it right.",
+      "The trollolol meme has been dead for years, but it's time for the great meme reset.",
     years: [1980, 1990, 2000, 2010, 2020, 2025],
     usageSeries: [
       { label: "Cultural unit (academic)", data: [70, 66, 48, 18, 7, 5] },
@@ -105,14 +105,14 @@ export const slangWords: SlangWord[] = [
     shortDefinition:
       "Saying something is low-key and genuinely true at the same time; secretly honest without making it a big speech.",
     shortExample: "Lowkenuinely, that tiny cafe has the best coffee in town.",
-    years: [1980, 1990, 2000, 2010, 2020, 2025],
+    years: [2000, 2005, 2010, 2015, 2020, 2025],
     usageSeries: [
       // Intentionally one modern meaning with a recent rise only.
-      { label: "Low-key genuine admission", data: [null, null, null, null, 58, 84] },
+      { label: "Low-key genuine admission", data: [null, null, null, null, 0, 84] },
     ],
     eraDefinitions: [
       {
-        era: "2020s",
+        era: "2025",
         label: "Lowkey and Genuinely",
         definition:
           "A mashup used to signal genuine confession without making a big scene.",
