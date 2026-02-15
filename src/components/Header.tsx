@@ -1,9 +1,9 @@
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 export default function Header() {
   const navItems = [
     { name: "Trends", path: "/trends" },
-    { name: "About Us", path: "/about" } // Assuming an /about page for future
+    { name: "About Us", path: "/about" }, // Assuming an /about page for future
   ];
 
   return (

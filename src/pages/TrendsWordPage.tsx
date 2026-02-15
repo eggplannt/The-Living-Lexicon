@@ -13,7 +13,9 @@ export default function TrendsWordPage() {
     return (
       <div className="w-full bg-alternative-background p-8 overflow-auto">
         <div className="mx-auto max-w-5xl bg-white rounded-xl shadow-md p-8">
-          <h1 className="text-3xl font-bold text-red-900 mb-4">Word not found</h1>
+          <h1 className="text-3xl font-bold text-red-900 mb-4">
+            Word not found
+          </h1>
           <p className="text-gray-700 mb-6">
             This trend page does not exist yet.
           </p>
@@ -74,7 +76,12 @@ export default function TrendsWordPage() {
               }))}
               height={360}
               margin={{ top: 30, right: 30, bottom: 50, left: 60 }}
-              slotProps={{ legend: { direction: "horizontal", position: { vertical: "top", horizontal: "center" } } }}
+              slotProps={{
+                legend: {
+                  direction: "horizontal",
+                  position: { vertical: "top", horizontal: "center" },
+                },
+              }}
             />
           </div>
         </section>
@@ -92,7 +99,9 @@ export default function TrendsWordPage() {
                 <p className="text-sm font-semibold uppercase tracking-wide text-red-800 mb-1">
                   {item.era}
                 </p>
-                <h3 className="text-lg font-bold text-red-900 mb-2">{item.label}</h3>
+                <h3 className="text-lg font-bold text-red-900 mb-2">
+                  {item.label}
+                </h3>
                 <p className="text-gray-700 mb-3">{item.definition}</p>
                 <p className="text-gray-600 italic mt-auto">"{item.example}"</p>
               </article>
@@ -101,7 +110,9 @@ export default function TrendsWordPage() {
         </section>
 
         <section className="bg-white rounded-xl shadow-md p-6 sm:p-8">
-          <h2 className="text-2xl font-bold text-red-900 mb-4">Explore Other Words</h2>
+          <h2 className="text-2xl font-bold text-red-900 mb-4">
+            Explore Other Words
+          </h2>
           <div className="flex flex-wrap gap-3">
             {slangWords
               .filter((entry) => entry.slug !== wordData.slug)
@@ -120,4 +131,3 @@ export default function TrendsWordPage() {
     </div>
   );
 }
-
