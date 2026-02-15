@@ -1,6 +1,9 @@
+//Remembers the UI state when data is updated.
 import { useState } from "react";
+//Loads the logo.
 import logo from "../assets/CalgaryHacks 2026 Logo.png";
-import NewWordModal from "../components/NewWordModal"; // Import the modal
+//Import the modal for entering a new word definition.
+import NewWordModal from "../components/NewWordModal";
 
 export default function MainPage() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -10,9 +13,12 @@ export default function MainPage() {
 
   return (
     <>
+      {/*Uses Tailwind classes to set width, colour, spacing, and scrolling behaviour.*/}
       <div className="flex flex-col items-center bg-background px-30 w-full max-h-full overflow-auto">
-        <div className="flex w-full bg-primary p-20 rounded-lg grow">
-          <div className="flex flex-1 flex-col justify-center">
+        {/*Main content panel.*/}
+        <div className="flex w-full bg-primary rounded-lg grow">
+          {/*Left side of homepage stuff.*/}
+          <div className="flex flex-1 flex-col justify-center py-20 pl-20">
             <div className="text-onbackground text-8xl font-bold">
               See Through Time
             </div>
@@ -28,10 +34,9 @@ export default function MainPage() {
               Enter new word definition
             </button>
           </div>
-          <div className="w-50" /> {/* Spacer */}
           <div className="flex flex-1 items-center">
             {" "}
-            {/* Image container */}
+            {/*For the logo.*/}
             <img
               src={logo}
               alt="The Living Lexicon logo"
