@@ -105,14 +105,14 @@ export const slangWords: SlangWord[] = [
     shortDefinition:
       "Saying something is low-key and genuinely true at the same time; secretly honest without making it a big speech.",
     shortExample: "Lowkenuinely, that tiny cafe has the best coffee in town.",
-    years: [1980, 1990, 2000, 2010, 2020, 2025],
+    years: [2000, 2005, 2010, 2015, 2020, 2025],
     usageSeries: [
       // Intentionally one modern meaning with a recent rise only.
-      { label: "Low-key genuine admission", data: [null, null, null, null, 58, 84] },
+      { label: "Low-key genuine admission", data: [null, null, null, null, 0, 84] },
     ],
     eraDefinitions: [
       {
-        era: "2020s",
+        era: "2025",
         label: "Lowkey and Genuinely",
         definition:
           "A mashup used to signal genuine confession without making a big scene.",
