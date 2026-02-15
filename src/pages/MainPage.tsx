@@ -1,6 +1,6 @@
 export default function MainPage() {
   return (
-    <div className="flex flex-col h-screen items-center bg-background px-30">
+    <div className="flex flex-col items-center bg-background px-30 w-full">
       <div className="flex w-full h-full bg-primary p-20 rounded-lg">
         <div className="flex flex-col justify-center h-full w-1/2">
           <div className="text-onbackground text-9xl font-bold">
