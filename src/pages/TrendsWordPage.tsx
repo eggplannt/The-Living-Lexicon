@@ -7,8 +7,10 @@ import {
 } from "../data/trendsData";
 
 export default function TrendsWordPage() {
+  //Gets the current word ID from the URL.
   const { slug } = useParams<{ slug: SlangWordSlug }>();
 
+  //Word not found check. Exception handling.
   if (!slug || !(slug in slangWordBySlug)) {
     return (
       <div className="w-full bg-alternative-background p-8 overflow-auto">
@@ -27,8 +29,10 @@ export default function TrendsWordPage() {
     );
   }
 
+  //Looks up the selected word's data.
   const wordData = slangWordBySlug[slug as SlangWordSlug];
 
+  //Shows word title, definition, example, and back to trends link.
   return (
     <div className="w-full bg-alternative-background p-4 sm:p-6 lg:p-8 overflow-auto">
       <div className="mx-auto max-w-6xl flex flex-col gap-8">
@@ -47,6 +51,7 @@ export default function TrendsWordPage() {
           </blockquote>
         </section>
 
+        {/*Chart section*/}
         <section className="bg-white rounded-xl shadow-md p-6 sm:p-8">
           <h2 className="text-2xl font-bold text-red-900 mb-5">
             Definition Popularity Over Time (Mock Data)
@@ -86,6 +91,7 @@ export default function TrendsWordPage() {
           </div>
         </section>
 
+        {/*Builds one card per era for popular definitions.*/}
         <section className="bg-white rounded-xl shadow-md p-6 sm:p-8">
           <h2 className="text-2xl font-bold text-red-900 mb-5">
             Popular definitions through eras
