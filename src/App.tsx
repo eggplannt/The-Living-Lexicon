@@ -1,9 +1,11 @@
-function App() {
+import Header from "./components/Header";
+import MainPage from "./pages/MainPage";
+
+export default function App() {
   return (
-    <div className="flex flex-col h-screen w-full items-center justify-center text-9xl bg-background">
-      <h1 className="text-onbackground">The Living Lexicon</h1>
+    <div className="flex flex-col h-screen">
+      <Header />
+      <MainPage />
     </div>
   );
 }
-
-export default App;
