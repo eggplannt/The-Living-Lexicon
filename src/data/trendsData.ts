@@ -47,14 +47,16 @@ export const slangWords: SlangWord[] = [
         label: "Cultural Unit",
         definition:
           "An idea that spreads from person to person, similar to genes in biology.",
-        example: "In class, we called fashion trends a meme before social media existed.",
+        example:
+          "In class, we called fashion trends a meme before social media existed.",
       },
       {
         era: "2000s-2010s",
         label: "Image Macro",
         definition:
           "A reusable joke template, usually an image with text people remix endlessly.",
-        example: "Post that meme with top text and bottom text, everyone will get it.",
+        example:
+          "Post that meme with top text and bottom text, everyone will get it.",
       },
       {
         era: "2020s",
@@ -81,13 +83,15 @@ export const slangWords: SlangWord[] = [
       {
         era: "1980s-1990s",
         label: "Serious Error",
-        definition: "A major mistake, often in formal situations like politics or chess.",
+        definition:
+          "A major mistake, often in formal situations like politics or chess.",
         example: "That policy blunder cost them the election.",
       },
       {
         era: "2000s-2010s",
         label: "Public Oops",
-        definition: "A visible mistake amplified by forums, comments, or screenshots.",
+        definition:
+          "A visible mistake amplified by forums, comments, or screenshots.",
         example: "Deleting the tweet made the blunder trend even harder.",
       },
       {
@@ -108,7 +112,10 @@ export const slangWords: SlangWord[] = [
     years: [2000, 2005, 2010, 2015, 2020, 2025],
     usageSeries: [
       // Intentionally one modern meaning with a recent rise only.
-      { label: "Low-key genuine admission", data: [null, null, null, null, 0, 84] },
+      {
+        label: "Low-key genuine admission",
+        data: [null, null, null, null, 0, 84],
+      },
     ],
     eraDefinitions: [
       {
@@ -129,7 +136,10 @@ export const slangWords: SlangWord[] = [
     years: [1980, 1990, 2000, 2010, 2020, 2025],
     usageSeries: [
       { label: "Wager", data: [82, 80, 72, 55, 41, 36] },
-      { label: "Agreement / challenge accepted", data: [8, 12, 32, 58, 89, 94] },
+      {
+        label: "Agreement / challenge accepted",
+        data: [8, 12, 32, 58, 89, 94],
+      },
     ],
     eraDefinitions: [
       {
@@ -147,7 +157,8 @@ export const slangWords: SlangWord[] = [
       {
         era: "2020s",
         label: "Challenge Accepted",
-        definition: "A confident signal that you are ready to follow through immediately.",
+        definition:
+          "A confident signal that you are ready to follow through immediately.",
         example: "You think I cannot finish this by noon? Bet.",
       },
     ],
@@ -167,7 +178,8 @@ export const slangWords: SlangWord[] = [
       {
         era: "1980s-2000s",
         label: "Hat",
-        definition: "A cap as physical headwear, especially baseball-style hats.",
+        definition:
+          "A cap as physical headwear, especially baseball-style hats.",
         example: "He forgot his cap and got sunburned at the game.",
       },
       {
@@ -180,7 +192,8 @@ export const slangWords: SlangWord[] = [
       {
         era: "2020s",
         label: "Lie / False Claim",
-        definition: "Direct callout for dishonesty; opposite phrase is 'no cap'.",
+        definition:
+          "Direct callout for dishonesty; opposite phrase is 'no cap'.",
         example: "No cap, that was the fastest lap all season.",
       },
     ],
@@ -213,17 +226,20 @@ export const slangWords: SlangWord[] = [
       {
         era: "2020s",
         label: "Meme Label",
-        definition: "A teasing tag for visible thirst, often used jokingly online.",
-        example: "He changed his pfp to match hers in two minutes, full simp mode.",
+        definition:
+          "A teasing tag for visible thirst, often used jokingly online.",
+        example:
+          "He changed his pfp to match hers in two minutes, full simp mode.",
       },
     ],
   },
 ];
 
-export const slangWordBySlug: Record<SlangWordSlug, SlangWord> = slangWords.reduce(
-  (accumulator, item) => {
-    accumulator[item.slug] = item;
-    return accumulator;
-  },
-  {} as Record<SlangWordSlug, SlangWord>,
-);
+export const slangWordBySlug: Record<SlangWordSlug, SlangWord> =
+  slangWords.reduce(
+    (accumulator, item) => {
+      accumulator[item.slug] = item;
+      return accumulator;
+    },
+    {} as Record<SlangWordSlug, SlangWord>,
+  );
