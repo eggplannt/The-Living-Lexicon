@@ -10,8 +10,8 @@ export default function MainPage() {
 
   return (
     <>
-      <div className="flex flex-col items-center bg-background px-30 w-full min-h-full overflow-auto">
-        <div className="flex w-full bg-primary p-20 rounded-lg flex-grow">
+      <div className="flex flex-col items-center bg-background px-30 w-full max-h-full overflow-auto">
+        <div className="flex w-full bg-primary p-20 rounded-lg grow">
           <div className="flex flex-1 flex-col justify-center">
             <div className="text-onbackground text-8xl font-bold">
               See Through Time
